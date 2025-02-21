@@ -1,5 +1,5 @@
 .register-form-container {
-    margin: auto;
+    margin: 10% auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +53,7 @@
     display: flex;
     justify-content: center;
     gap: 8%;
+    font-size: 0.8rem;
 }
 
 .remember {
