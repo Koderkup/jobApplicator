@@ -1,6 +1,8 @@
 import styles from "./style.module.css";
 import cn from "classnames";
 import Input from "../../components/Input/Input";
+import google from '../../icons/google.svg'
+
 const RegisterPage = () => {
   return (
     <div className={cn("container", styles["register-form-container"])}>
@@ -40,6 +42,10 @@ const RegisterPage = () => {
           РЕГИСТРАЦИЯ
         </button>
         <div className={styles["border"]}></div>
+        <button type="submit" className={cn(styles["register-submit-google"])}>
+          <img src={google} alt="google" />
+          продолжить с Google
+        </button>
       </form>
     </div>
   );
