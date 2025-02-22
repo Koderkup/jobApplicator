@@ -38,7 +38,7 @@ input:-webkit-autofill:focus {
     background-color: transparent !important;
 }
 
-.LuEyeClosed {
+.LuEyeClosed, .LiaEye {
     align-self: flex-end;
     width: 24px;
     height: 24px;
