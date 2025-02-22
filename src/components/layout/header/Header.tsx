@@ -68,7 +68,7 @@ const Header = () => {
           {auth ? (
             <CiLogout className={styles["CiLogout"]} />
           ) : (
-            <Link to="/login">
+            <Link to="auth/login">
               <CiLogin className={styles["CiLogin"]} />
             </Link>
           )}
@@ -119,7 +119,7 @@ const Header = () => {
             {auth ? (
               <CiLogout className={styles["CiLogout"]} />
             ) : (
-              <Link to="/login" style={{ display: "inline" }}>
+              <Link to="auth/login" style={{ display: "inline" }}>
                 <CiLogin className={styles["CiLogin"]} />
               </Link>
             )}

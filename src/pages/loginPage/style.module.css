@@ -1,18 +1,18 @@
 .register-form-container {
-    margin: 10% auto;
+    margin: 50px 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .register-form {
     width: 458px;
-    height: 627px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     display: flex;
     flex-flow: column;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .register-form h2 {
@@ -30,12 +30,9 @@
 .enter {
     background-color: #DDF5FF;
 }
-.google-icon {
-    width: 24px;
-    height: 24px;
-}
+
 .register-submit {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
     width: 70%;
     background-color: #0087D1;
@@ -63,9 +60,10 @@
 }
 
 .remember input {
-    margin: 0 10px;
-    background-color: #DDF5FF;
+    background-color: #F8F1FF;
 }
-.remember label {
-color: #0087D1;
+
+.google-icon {
+    width: 24px;
+    height: 24px;
 }

@@ -25,7 +25,7 @@ const LoginPage = () => {
           ВОЙТИ
         </button>
         <div className={styles["border"]}></div>
-        <Link to={"/register"} style={{ textAlign: "left", width: "70%", color: '#0087D1' }}>
+        <Link to={"/auth/register"} style={{ textAlign: "left", width: "70%", color: '#0087D1' }}>
           Нету пароля ?
         </Link>
         <button type="submit" className={cn(styles["register-submit-google"])}>
