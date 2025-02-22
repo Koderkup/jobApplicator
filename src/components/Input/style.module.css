@@ -8,6 +8,7 @@
     padding: 15px;
     height: 50px;
     border-radius: 8px;
+    overflow: hidden;
 }
 .input-wrapper label {
     font-size: 12px;
@@ -21,8 +22,26 @@
     position: absolute;
     bottom: 5px;
     left: 3%;
+    border: none;
+    outline: none;
 }
 .input {
-    width: 100%;
+    width: 90%;
     height: 50%;
+}
+
+input:-webkit-autofill {
+background-color: transparent !important;
+}
+
+input:-webkit-autofill:focus {
+    background-color: transparent !important;
+}
+
+.LuEyeClosed {
+    align-self: flex-end;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 10;
 }

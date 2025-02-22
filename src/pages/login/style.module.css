@@ -30,14 +30,14 @@
 
 
 .enter {
-    background-color: #F8F1FF;
+    background-color: #DDF5FF;
 }
 
 .register-submit {
     margin-top: 10px;
     margin-bottom: 20px;
     width: 70%;
-    background-color: #985ACE;
+    background-color: #0087D1;
     color: white;
     border-radius: 8px;
     padding: 10px 0;
@@ -45,7 +45,7 @@
 }
 
 .register-submit-google {
-    border: 1px solid #985ACE;
+    border: 1px solid #0087D1;
     border-radius: 8px;
     width: 70%;
     padding: 10px 0;
@@ -65,4 +65,7 @@
     background-color: #F8F1FF;
 }
 
-
+.google-icon {
+    width: 24px;
+    height: 24px;
+}

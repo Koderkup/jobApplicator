@@ -1,10 +1,13 @@
 import cn from "classnames";
 import styles from "./style.module.css";
+import { LuEyeClosed } from "react-icons/lu";
+import { useState } from "react";
 interface InputProps {
   label?: string;
   type: string;
   className?: string;
   placeholder?: string;
+  autocomplete?: string;
 }
 
 const Input = ({
@@ -13,6 +16,10 @@ const Input = ({
   className = "",
   placeholder = "",
 }: InputProps) => {
+  const [isVisiblePassword, setIsVisiblePassword] = useState(false);
+  const toggleIsVisiblePassword = () => {
+    setIsVisiblePassword(!isVisiblePassword);
+  };
   return (
     <div
       className={cn(styles["input-wrapper"], {
@@ -20,7 +27,15 @@ const Input = ({
       })}
     >
       <label>{label}</label>
-      <input type={type} className={styles['input']} placeholder={placeholder} required/>
+      <input
+        type={!isVisiblePassword ? type : 'text'}
+        className={styles["input"]}
+        placeholder={placeholder}
+        required
+      />
+      {type === "password" ? (
+        <LuEyeClosed className={styles["LuEyeClosed"]} onClick={toggleIsVisiblePassword}/>
+      ) : null}
     </div>
   );
 };

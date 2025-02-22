@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 import cn from "classnames";
 import Input from "../../components/Input/Input";
-import google from '../../icons/google.svg'
+import { FcGoogle } from "react-icons/fc";
 
 const RegisterPage = () => {
   return (
@@ -11,39 +11,44 @@ const RegisterPage = () => {
         <Input
           type={"text"}
           label={"Имя"}
-          placeholder={"Имя"}
           className={styles["enter"]}
         />
         <Input
           type={"text"}
           label={"Фамилия"}
-          placeholder={"Фамилия"}
           className={styles["enter"]}
         />
         <Input
           type={"email"}
           label={"E-mail"}
-          placeholder={"E-mail"}
           className={styles["enter"]}
         />
         <Input
           type={"password"}
           label={"Пароль"}
-          placeholder={"Пароль"}
           className={styles["enter"]}
         />
         <Input
           type={"password"}
           label={"Подтвердите пароль"}
-          placeholder={"Подтвердите пароль"}
           className={styles["enter"]}
         />
+        <div className={cn(styles["remember"])}>
+          <input
+            type="checkbox"
+            className="form-check-input"
+            id="exampleCheck1"
+          />
+          <label className="form-check-label" htmlFor="exampleCheck1">
+            Уверен в себе ?
+          </label>
+        </div>
         <button type="submit" className={cn(styles["register-submit"])}>
           РЕГИСТРАЦИЯ
         </button>
         <div className={styles["border"]}></div>
         <button type="submit" className={cn(styles["register-submit-google"])}>
-          <img src={google} alt="google" />
+          <FcGoogle className={styles['google-icon']} />
           продолжить с Google
         </button>
       </form>

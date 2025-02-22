@@ -6,6 +6,9 @@ const AnimatedBalls = () => {
       <div className={styles.circle}></div>
       <div className={styles.circle}></div>
       <div className={styles.circle}></div>
+      <div className={styles.circle}></div>
+      <div className={styles.circle}></div>
+      <div className={styles.circle}></div>
     </div>
   );
 };

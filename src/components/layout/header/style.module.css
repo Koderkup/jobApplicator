@@ -1,10 +1,20 @@
 .nav-header {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-around;
     height: 100px;
     box-shadow: 0 4px 10px rgba(135, 206, 235, 0.5);
+}
+
+.nav-link-wrapper {
+    height: 100%;
+    gap: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-icon-wrapper {
@@ -26,9 +36,28 @@
     align-items: center;
 }
 
-.active {
-    border-top: 2px solid #279DD8;
-    padding-bottom: 5px;
+.nav-link {
+    position: relative;
+    padding-top: 3px;
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: blue;
+    display: none;
+}
+
+.active::before {
+    display: block;
 }
 
 .menu-icon {
@@ -57,6 +86,8 @@
     position: relative;
 }
 
+
+
 .close-icon {
     display: flex;
     justify-content: flex-end;
@@ -75,5 +106,14 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap:40%;
+    gap: 40%;
+}
+
+.CiUser,
+.CiLogin,
+.CiLogout,
+.IoMenuOutline,
+.IoMdClose {
+    width: 24px;
+    height: 24px;
 }
