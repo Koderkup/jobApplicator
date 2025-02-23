@@ -24,6 +24,16 @@
     font-size: 15px;
 }
 
+.saveButton {
+    background-color: #4182f9;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 23px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 @media(max-width: 991px) {
     .formInput {
         max-width: 100%;

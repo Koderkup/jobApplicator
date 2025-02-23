@@ -5,7 +5,7 @@ export function ProfileHeader() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.welcomeSection}>
-        <h1 className={styles.welcomeUser}>Привет, Аманда</h1>
+        <h1 className={styles.welcomeUser}>Привет, Алекса</h1>
         <time className={styles.dateTime}>Вт, 23 Фев 2025</time>
       </div>
 
