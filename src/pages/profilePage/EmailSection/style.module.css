@@ -16,6 +16,9 @@
 }
 
 .emailIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #4182f9;
     border-radius: 50%;
     width: 45px;
@@ -48,7 +51,11 @@
     font-size: 15px;
     cursor: pointer;
 }
-
+.FaEnvelope {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
 @media(max-width:991px) {
     .addEmailButton {
         padding: 10px 20px;
