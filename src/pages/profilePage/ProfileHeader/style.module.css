@@ -64,7 +64,15 @@
     height: 49px;
     object-fit: cover;
 }
-
+.PiBellLight {
+    width: 24px;
+    height: 24px;
+}
+.CiSearch {
+    transform: translateX(50px);
+    width: 24px;
+    height: 24px;
+}
 @media(max-width: 991px) {
     .search {
         padding: 14px 20px;

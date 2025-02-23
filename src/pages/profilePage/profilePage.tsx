@@ -6,29 +6,31 @@ import { EmailSection } from "./EmailSection/EmailSection";
 
 const profilePage = () => {
  return (
-   <main className={styles.profilesetting}>
-     <aside className={styles.sidebar}>
-       <div className={styles.sidebarContent} />
-     </aside>
+   <div className={styles.container}>
+     <main className={styles.profilesetting}>
+       <aside className={styles.sidebar}>
+         <div className={styles.sidebarContent} />
+       </aside>
 
-     <section className={styles.mainContent}>
-       <ProfileHeader />
+       <section className={styles.mainContent}>
+         <ProfileHeader />
 
-       <article className={styles.profileCard}>
-         <img
-           src="../../../public/profile_banner.png"
-           alt="Profile banner"
-           className={styles.profileBanner}
-         />
+         <article className={styles.profileCard}>
+           <img
+             src="../../../public/profile_banner.png"
+             alt="Profile banner"
+             className={styles.profileBanner}
+           />
 
-         <div className={styles.profileContent}>
-           <UserProfile />
-           <ProfileForm />
-           <EmailSection />
-         </div>
-       </article>
-     </section>
-   </main>
+           <div className={styles.profileContent}>
+             <UserProfile />
+             <ProfileForm />
+             <EmailSection />
+           </div>
+         </article>
+       </section>
+     </main>
+   </div>
  );
 };
 

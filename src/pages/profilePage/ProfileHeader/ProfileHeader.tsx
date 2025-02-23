@@ -1,5 +1,6 @@
 import styles from "./style.module.css";
-
+import { PiBellLight } from "react-icons/pi";
+import { CiSearch } from "react-icons/ci";
 export function ProfileHeader() {
   return (
     <header className={styles.headerContainer}>
@@ -9,6 +10,7 @@ export function ProfileHeader() {
       </div>
 
       <div className={styles.headerActions}>
+        <CiSearch className={styles["CiSearch"]} />
         <input
           type="search"
           placeholder="Search"
@@ -19,6 +21,7 @@ export function ProfileHeader() {
           className={styles.notificationButton}
           aria-label="Notifications"
         >
+          <PiBellLight className={styles["PiBellLight"]} />
           <span className={styles.notificationIcon} />
         </button>
         <button className={styles.profileButton} aria-label="Profile menu">
