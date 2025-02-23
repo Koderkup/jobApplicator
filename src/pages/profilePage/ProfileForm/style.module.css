@@ -3,9 +3,25 @@
 }
 
 .formRow {
+    position: relative;
     display: flex;
     gap: 29px;
     margin-bottom: 20px;
+}
+
+.error {
+    color: tomato;
+    position: absolute;
+}
+
+.firstNameError, .gender, .language {
+    bottom: -12px;
+    left: 0;
+}
+
+.lastNameError, .country, .timezone {
+    bottom: -12px;
+    right: 0;
 }
 
 .formInput {

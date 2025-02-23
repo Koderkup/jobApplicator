@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
-
+import cn from 'classnames'
 interface ProfileFormProps {
   firstName?: string;
   lastName?: string;
@@ -46,7 +46,10 @@ export function ProfileForm({
           })}
         />
         {errors.firstName && (
-          <span className={styles.error} style={{ fontSize: "0.8rem" }}>
+          <span
+            className={cn(styles.error, styles.firstNameError)}
+            style={{ fontSize: "0.8rem" }}
+          >
             {errors.firstName.message}
           </span>
         )}
@@ -65,7 +68,10 @@ export function ProfileForm({
           })}
         />
         {errors.lastName && (
-          <span className={styles.error} style={{ fontSize: "0.8rem" }}>
+          <span
+            className={cn(styles.error, styles.lastNameError)}
+            style={{ fontSize: "0.8rem" }}
+          >
             {errors.lastName.message}
           </span>
         )}
@@ -87,7 +93,10 @@ export function ProfileForm({
           <option value="fm">Женский</option>
         </select>
         {errors.gender && (
-          <span className={styles.error} style={{ fontSize: "0.8rem" }}>
+          <span
+            className={cn(styles.error, styles.gender)}
+            style={{ fontSize: "0.8rem" }}
+          >
             {errors.gender.message}
           </span>
         )}
@@ -103,7 +112,10 @@ export function ProfileForm({
           <option value="by">Беларусь</option>
         </select>
         {errors.country && (
-          <span className={styles.error} style={{ fontSize: "0.8rem" }}>
+          <span
+            className={cn(styles.error, styles.country)}
+            style={{ fontSize: "0.8rem" }}
+          >
             {errors.country.message}
           </span>
         )}
@@ -126,7 +138,10 @@ export function ProfileForm({
           <option value="by">белорусский</option>
         </select>
         {errors.language && (
-          <span className={styles.error} style={{ fontSize: "0.8rem" }}>
+          <span
+            className={cn(styles.error, styles.language)}
+            style={{ fontSize: "0.8rem" }}
+          >
             {errors.language.message}
           </span>
         )}
@@ -143,7 +158,10 @@ export function ProfileForm({
           <option value="5">GMT + 5.00</option>
         </select>
         {errors.timezone && (
-          <span className={styles.error} style={{ fontSize: "0.8rem" }}>
+          <span
+            className={cn(styles.error, styles.timezone)}
+            style={{ fontSize: "0.8rem" }}
+          >
             {errors.timezone.message}
           </span>
         )}
