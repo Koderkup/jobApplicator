@@ -4,7 +4,7 @@ export const APP_PATHS = {
     ABSOLUTE: "/",
   },
   LOGIN_PAGE: {
-    RELATIVE: "/auth/login", 
+    RELATIVE: "/auth/login",
     ABSOLUTE: "/auth/login",
   },
   REGISTER_PAGE: {
@@ -22,6 +22,10 @@ export const APP_PATHS = {
   OFFERS_PAGE: {
     RELATIVE: "/offers",
     ABSOLUTE: "/offers",
+  },
+  PROFILE_PAGE: {
+    RELATIVE: "/profile",
+    ABSOLUTE: "/profile",
   },
   AUTH_PAGE: {
     RELATIVE: "/auth",

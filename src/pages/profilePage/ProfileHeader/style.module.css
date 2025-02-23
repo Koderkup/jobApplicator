@@ -1,0 +1,74 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+.welcomeSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcomeUser {
+    color: #3e435d;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.dateTime {
+    color: #ada7a7;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 11px;
+}
+
+.headerActions {
+    color: #ada7a7;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: auto 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.search {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 14px 57px;
+    border: none;
+}
+
+.notificationButton {
+    background-color: #fff;
+    border-radius: 9px;
+    width: 49px;
+    height: 49px;
+    border: none;
+    cursor: pointer;
+}
+
+.profileButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.profileImage {
+    border-radius: 9px;
+    width: 49px;
+    height: 49px;
+    object-fit: cover;
+}
+
+@media(max-width: 991px) {
+    .search {
+        padding: 14px 20px;
+    }
+
+
+}

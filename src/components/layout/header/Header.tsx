@@ -63,7 +63,9 @@ const Header = () => {
       {!isMobile && (
         <div className={cn(styles["nav-icon-wrapper"])}>
           <div className={styles["avatar-wrapper"]}>
-            <CiUser className={styles["CiUser"]} />
+            <Link to="/profile" style={{color: 'black'}}>
+              <CiUser className={styles["CiUser"]} />
+            </Link>
           </div>
           {auth ? (
             <CiLogout className={styles["CiLogout"]} />

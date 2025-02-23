@@ -8,6 +8,7 @@ import RegisterPage from "../../pages/registerPage/RegisterPage";
 import FiltersPage from "../../pages/filtersPage/FiltersPage";
 import ResultPage from "../../pages/resultPage/ResultPage";
 import OffersPage from "../../pages/offersPage/OffersPage";
+import ProfilePage from "../../pages/profilePage/profilePage";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: APP_PATHS.OFFERS_PAGE.RELATIVE,
         element: <OffersPage />,
+      },
+      {
+        path: APP_PATHS.PROFILE_PAGE.RELATIVE,
+        element: <ProfilePage />,
       },
     ],
   },

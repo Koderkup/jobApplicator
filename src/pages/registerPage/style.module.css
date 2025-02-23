@@ -1,11 +1,13 @@
 .register-form-container {
-    margin: 50px 10px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .register-form {
+    margin: 10% 10px;
     width: 458px;
     height: 627px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -13,6 +15,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    background-color: white;
 }
 
 .register-form h2 {
