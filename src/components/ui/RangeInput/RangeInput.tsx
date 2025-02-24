@@ -33,7 +33,7 @@ const RangeInput = () => {
             <div className={styles.Max}>Max</div>
             <div className={styles.GroupMax}>
               <div className={styles.RectangleMax} />
-              <div className={styles.MaxSum}>{maxValue*10000}</div>
+              <div className={styles.MaxSum}>{maxValue*1500}</div>
             </div>
           </div>
           <div className={styles.Dash}>-</div>
