@@ -3,14 +3,6 @@ export const APP_PATHS = {
     RELATIVE: "/",
     ABSOLUTE: "/",
   },
-  LOGIN_PAGE: {
-    RELATIVE: "/auth/login",
-    ABSOLUTE: "/auth/login",
-  },
-  REGISTER_PAGE: {
-    RELATIVE: "/auth/register",
-    ABSOLUTE: "/auth/register",
-  },
   FILTERS_PAGE: {
     RELATIVE: "/filters",
     ABSOLUTE: "/filters",
@@ -30,5 +22,13 @@ export const APP_PATHS = {
   AUTH_PAGE: {
     RELATIVE: "/auth",
     ABSOLUTE: "/auth",
+  },
+  LOGIN_PAGE: {
+    RELATIVE: "/login",
+    ABSOLUTE: "/auth/login",
+  },
+  REGISTER_PAGE: {
+    RELATIVE: "/register",
+    ABSOLUTE: "/auth/register",
   },
 };

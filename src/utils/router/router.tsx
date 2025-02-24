@@ -42,11 +42,11 @@ const router = createBrowserRouter([
     element: <LayoutAuth />,
     children: [
       {
-        path: APP_PATHS.LOGIN_PAGE.RELATIVE,
+        path: APP_PATHS.LOGIN_PAGE.ABSOLUTE,
         element: <LoginPage />,
       },
       {
-        path: APP_PATHS.REGISTER_PAGE.RELATIVE,
+        path: APP_PATHS.REGISTER_PAGE.ABSOLUTE,
         element: <RegisterPage />,
       },
     ],
