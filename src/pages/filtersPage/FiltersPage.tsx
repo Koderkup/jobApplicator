@@ -1,3 +1,4 @@
+import DropDownCheckBox from "../../components/ui/DropDown/DropDownCheckBox";
 import Plate from "../../components/ui/Plate/Plate";
 import TextArea from "../../components/ui/TextArea/TextArea";
 import TextInput from "../../components/ui/TextInput/TextInput";
@@ -15,6 +16,9 @@ const FiltersPage = () => {
       </div>
       <div style={{ margin: "10px" }}>
         <TextInput />
+      </div>
+      <div style={{ margin: "10px" }}>
+        <DropDownCheckBox />
       </div>
     </>
   );
