@@ -8,6 +8,7 @@ import { useState } from "react";
 import useMediaQuery from "../../../hooks/useMediaQurey";
 import { CiLogin } from "react-icons/ci";
 import { CiLogout } from "react-icons/ci";
+import { APP_PATHS } from "../../../utils/consts/appConsts";
 const Header = () => {
   const [auth, setAuth] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <nav className={cn(styles["nav-header"])}>
+    <header className={cn(styles["nav-header"])}>
       <div className={cn(styles[""])}>
         <Link style={{ color: "black" }} className={cn(styles[""])} to="/">
           JobApplicator
@@ -35,7 +36,7 @@ const Header = () => {
             className={({ isActive }) =>
               cn(styles["nav-link"], { [styles["active"]]: isActive })
             }
-            to="/filters"
+            to={APP_PATHS.FILTERS_PAGE.RELATIVE}
           >
             ФИЛЬТРЫ
           </NavLink>
@@ -44,7 +45,7 @@ const Header = () => {
             className={({ isActive }) =>
               cn(styles["nav-link"], { [styles["active"]]: isActive })
             }
-            to="/offers"
+            to={APP_PATHS.OFFERS_PAGE.RELATIVE}
           >
             ПРЕДЛОЖЕНИЯ
           </NavLink>
@@ -53,7 +54,7 @@ const Header = () => {
             className={({ isActive }) =>
               cn(styles["nav-link"], { [styles["active"]]: isActive })
             }
-            to="/result"
+            to={APP_PATHS.RESULT_PAGE.RELATIVE}
           >
             РЕЗУЛЬТАТ
           </NavLink>
@@ -63,21 +64,21 @@ const Header = () => {
       {!isMobile && (
         <div className={cn(styles["nav-icon-wrapper"])}>
           <div className={styles["avatar-wrapper"]}>
-            <Link to="/profile" style={{color: 'black'}}>
+            <Link to={APP_PATHS.PROFILE_PAGE.RELATIVE} style={{ color: 'black' }}>
               <CiUser className={styles["CiUser"]} />
             </Link>
           </div>
           {auth ? (
             <CiLogout className={styles["CiLogout"]} />
           ) : (
-            <Link to="auth/login">
+            <Link to={APP_PATHS.LOGIN_PAGE.ABSOLUTE}>
               <CiLogin className={styles["CiLogin"]} />
             </Link>
           )}
         </div>
       )}
 
-      {menuOpen && isMobile && (
+      {/* {menuOpen && isMobile && (
         <div className={styles["sidebar-menu"]}>
           <div className={styles["close-icon"]} onClick={toggleMenu}>
             <IoMdClose className={styles["IoMdClose"]} />
@@ -127,8 +128,8 @@ const Header = () => {
             )}
           </div>
         </div>
-      )}
-    </nav>
+      )} */}
+    </header>
   );
 };
 
