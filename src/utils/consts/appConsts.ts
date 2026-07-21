@@ -31,4 +31,8 @@ export const APP_PATHS = {
     RELATIVE: "/register",
     ABSOLUTE: "/auth/register",
   },
+  BEFORE_AFTER_PAGE:{
+    RELATIVE: "/before_after",
+    ABSOLUTE: "/before_after"
+  }
 };

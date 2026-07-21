@@ -9,6 +9,8 @@ import FiltersPage from "../../pages/filtersPage/FiltersPage";
 import ResultPage from "../../pages/resultPage/ResultPage";
 import OffersPage from "../../pages/offersPage/OffersPage";
 import ProfilePage from "../../pages/profilePage/profilePage";
+import BeforeAfterPage from "../../pages/before_after/BeforeAfterPage";
+
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: APP_PATHS.PROFILE_PAGE.RELATIVE,
         element: <ProfilePage />,
+      },
+      {
+        path: APP_PATHS.BEFORE_AFTER_PAGE.RELATIVE,
+        element: <BeforeAfterPage leftSrc={"/images/before.png"} rightSrc={"/images/after.png"}/>,
       },
     ],
   },

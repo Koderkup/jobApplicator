@@ -19,60 +19,72 @@ const Header = () => {
   };
 
   return (
-    <header className={cn(styles["nav-header"])}>
-      <div className={cn(styles[""])}>
-        <Link style={{ color: "black" }} className={cn(styles[""])} to="/">
+    <header className={cn(styles['nav-header'])}>
+      <div className={cn(styles[''])}>
+        <Link style={{ color: 'black' }} className={cn(styles[''])} to='/'>
           JobApplicator
         </Link>
       </div>
       {isMobile ? (
-        <div className={styles["menu-icon"]} onClick={toggleMenu}>
-          <IoMenuOutline className={styles["IoMenuOutline"]} />
+        <div className={styles['menu-icon']} onClick={toggleMenu}>
+          <IoMenuOutline className={styles['IoMenuOutline']} />
         </div>
       ) : (
-        <div className={cn(styles["nav-link-wrapper"])}>
+        <div className={cn(styles['nav-link-wrapper'])}>
           <NavLink
-            style={{ textAlign: "center" }}
+            style={{ textAlign: 'center' }}
             className={({ isActive }) =>
-              cn(styles["nav-link"], { [styles["active"]]: isActive })
+              cn(styles['nav-link'], { [styles['active']]: isActive })
             }
             to={APP_PATHS.FILTERS_PAGE.RELATIVE}
           >
             ФИЛЬТРЫ
           </NavLink>
           <NavLink
-            style={{ textAlign: "center" }}
+            style={{ textAlign: 'center' }}
             className={({ isActive }) =>
-              cn(styles["nav-link"], { [styles["active"]]: isActive })
+              cn(styles['nav-link'], { [styles['active']]: isActive })
             }
             to={APP_PATHS.OFFERS_PAGE.RELATIVE}
           >
             ПРЕДЛОЖЕНИЯ
           </NavLink>
           <NavLink
-            style={{ textAlign: "center" }}
+            style={{ textAlign: 'center' }}
             className={({ isActive }) =>
-              cn(styles["nav-link"], { [styles["active"]]: isActive })
+              cn(styles['nav-link'], { [styles['active']]: isActive })
             }
             to={APP_PATHS.RESULT_PAGE.RELATIVE}
           >
             РЕЗУЛЬТАТ
           </NavLink>
+          <NavLink
+            style={{ textAlign: 'center' }}
+            className={({ isActive }) =>
+              cn(styles['nav-link'], { [styles['active']]: isActive })
+            }
+            to={APP_PATHS.BEFORE_AFTER_PAGE.RELATIVE}
+          >
+            ДО/ПОСЛЕ
+          </NavLink>
         </div>
       )}
 
       {!isMobile && (
-        <div className={cn(styles["nav-icon-wrapper"])}>
-          <div className={styles["avatar-wrapper"]}>
-            <Link to={APP_PATHS.PROFILE_PAGE.RELATIVE} style={{ color: 'black' }}>
-              <CiUser className={styles["CiUser"]} />
+        <div className={cn(styles['nav-icon-wrapper'])}>
+          <div className={styles['avatar-wrapper']}>
+            <Link
+              to={APP_PATHS.PROFILE_PAGE.RELATIVE}
+              style={{ color: 'black' }}
+            >
+              <CiUser className={styles['CiUser']} />
             </Link>
           </div>
           {auth ? (
-            <CiLogout className={styles["CiLogout"]} />
+            <CiLogout className={styles['CiLogout']} />
           ) : (
             <Link to={APP_PATHS.LOGIN_PAGE.ABSOLUTE}>
-              <CiLogin className={styles["CiLogin"]} />
+              <CiLogin className={styles['CiLogin']} />
             </Link>
           )}
         </div>
